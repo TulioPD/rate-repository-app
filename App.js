@@ -1,11 +1,18 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 
+  { StyleSheet, Text, View, Touchable,
+    TouchableWithoutFeedback, Alert 
+  }
+ from 'react-native';
+import { TouchableNativeFeedback } from 'react-native';
+import Main from './src/components/Main.jsx';
 
 export default function App() {
+  console.log('Log test')
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Main />
     </View>
   );
 }
